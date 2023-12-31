@@ -1,8 +1,13 @@
 <!-- +layout.svelte -->
-<header>Hi, I'm big 14!</header>
+<script>
+  import Header from '$lib/components/organisms/Header.svelte';
+  import Footer from '$lib/components/organisms/Footer.svelte';
+</script>
+
+<Header/>
 
 <main>
 	<slot />
 </main>
 
-<footer>Hello, I'm the footer</footer>
+<Footer/>
