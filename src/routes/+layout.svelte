@@ -2,7 +2,7 @@
 <script>
   import Header from '$lib/components/organisms/Header.svelte';
   import Footer from '$lib/components/organisms/Footer.svelte';
-  import '$lib/styles/style.css';
+  import '$lib/styles/style.scss';
 </script>
 
 <Header/>
