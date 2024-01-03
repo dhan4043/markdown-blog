@@ -1,14 +1,14 @@
 <!-- Header.svelte -->
 <header>
-  <a href="/">Home</a>
+  <a href="/">david han</a>
 
   <nav>
     <ul>
       <li>
-        <a href="/blog">Blog</a>
+        <a href="/blog">blog</a>
       </li>
       <li>
-        <a href="/about">About</a>
+        <a href="/about">about</a>
       </li>
     </ul>
   </nav>
@@ -16,9 +16,10 @@
 
 <!-- Component Styling -->
 <style>
+
   header {
     padding: 1rem;
-    background: #282828;
+    background: #fffff5;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -33,6 +34,6 @@
 
   a {
     text-decoration: none;
-    color: #ebdbb2;
+    color: #000;
   }
 </style>

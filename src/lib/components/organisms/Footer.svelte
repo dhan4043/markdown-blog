@@ -7,13 +7,13 @@
 <style>
   footer {
     padding: 1rem;
-    background: #282828;
+    background: #fffff5;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   p {
-    color: #ebdbb2;
+    color: #000;
   }
 </style>
