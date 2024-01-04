@@ -1,6 +1,7 @@
 {
 	"/": [],
 	"/about": [],
-	"/blog": [],
-	"/blog/test": []
+	"/blog/[slug]": [
+		"src/routes/blog/[slug]/+page.js"
+	]
 }

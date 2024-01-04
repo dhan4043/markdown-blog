@@ -1,1 +1,2 @@
-export { default as component } from "../../../../src/routes/blog/test/+page.md";
+import * as universal from "../../../../src/routes/blog/[slug]/+page.js";
+export { universal };
