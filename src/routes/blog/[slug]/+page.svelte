@@ -1,5 +1,6 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
+  import Icon from '$lib/components/atoms/Icon.svelte';
   export let data;
   const {title, date, Content} = data;
 </script>

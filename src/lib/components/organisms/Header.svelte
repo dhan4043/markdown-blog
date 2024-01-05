@@ -1,9 +1,13 @@
 <!-- Header.svelte -->
 <header>
-  <a href="/">david han</a>
-
   <nav>
     <ul>
+      <li>
+        <a href="/">david han</a>
+      </li>
+      <li>
+        <span>|</span>
+      </li>
       <li>
         <a href="/blog">blog</a>
       </li>
@@ -18,15 +22,21 @@
 <style>
 
   header {
-    padding: 1rem;
+    margin: 0;
+    padding-top: 1rem;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    padding-left: 0;
     background: #fffff5;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;   
+    align-content: start;
   }
 
   ul {
     margin: 0;
+    padding: 0;
     list-style-type: none;
     display: flex;
     gap: 1rem;
@@ -35,5 +45,9 @@
   a {
     text-decoration: none;
     color: #000;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 </style>
