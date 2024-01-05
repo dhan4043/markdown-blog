@@ -1,17 +1,19 @@
 /* style.css */ 
-@import 'https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+
 body {
    margin: auto;
    background: #fffff5;
    color: #000;
-   font-family: Charis SIL;
+   font-family: Atkinson Hyperlegible;
    font-size: 1.4em;
    line-height: 1.4em;
    max-width: 38rem;
 }
 
 main {
-   padding: 1 rem;
+   /*padding: 1rem;*/
    margin: 2rem auto;
    max-width: 38rem;
 }
+

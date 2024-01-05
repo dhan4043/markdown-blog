@@ -42,9 +42,14 @@
     gap: 1rem;
   }
 
+  ul li:first-child {
+    font-weight: bold;
+    color: #ccc;
+  }
+
   a {
     text-decoration: none;
-    color: #000;
+    color: #000; 
   }
 
   a:hover {
