@@ -26,7 +26,7 @@
 
   header {
     margin: 0;
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-right: 0;
     padding-bottom: 1rem;
     padding-left: 0;
