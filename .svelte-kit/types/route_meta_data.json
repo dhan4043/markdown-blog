@@ -1,6 +1,9 @@
 {
 	"/": [],
 	"/about": [],
+	"/api/posts": [
+		"src/routes/api/posts/+server.js"
+	],
 	"/blog/[slug]": [
 		"src/routes/blog/[slug]/+page.js"
 	]
