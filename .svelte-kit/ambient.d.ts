@@ -26,11 +26,9 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const NVIM: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
 	export const STARSHIP_SHELL: string;
-	export const NVIM_LOG_FILE: string;
 	export const npm_node_execpath: string;
 	export const SHLVL: string;
 	export const WT_PROFILE_ID: string;
@@ -43,11 +41,9 @@ declare module '$env/static/private' {
 	export const npm_config_engine_strict: string;
 	export const WSL_DISTRO_NAME: string;
 	export const COLOR: string;
-	export const VIM: string;
 	export const npm_config_metrics_registry: string;
 	export const WAYLAND_DISPLAY: string;
 	export const LOGNAME: string;
-	export const VIMRUNTIME: string;
 	export const NAME: string;
 	export const WSL_INTEROP: string;
 	export const PULSE_SERVER: string;
@@ -70,7 +66,6 @@ declare module '$env/static/private' {
 	export const GOPATH: string;
 	export const npm_package_version: string;
 	export const npm_lifecycle_event: string;
-	export const MYVIMRC: string;
 	export const npm_config_globalconfig: string;
 	export const npm_config_init_module: string;
 	export const PWD: string;
@@ -117,11 +112,9 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		NVIM: string;
 		USER: string;
 		npm_config_user_agent: string;
 		STARSHIP_SHELL: string;
-		NVIM_LOG_FILE: string;
 		npm_node_execpath: string;
 		SHLVL: string;
 		WT_PROFILE_ID: string;
@@ -134,11 +127,9 @@ declare module '$env/dynamic/private' {
 		npm_config_engine_strict: string;
 		WSL_DISTRO_NAME: string;
 		COLOR: string;
-		VIM: string;
 		npm_config_metrics_registry: string;
 		WAYLAND_DISPLAY: string;
 		LOGNAME: string;
-		VIMRUNTIME: string;
 		NAME: string;
 		WSL_INTEROP: string;
 		PULSE_SERVER: string;
@@ -161,7 +152,6 @@ declare module '$env/dynamic/private' {
 		GOPATH: string;
 		npm_package_version: string;
 		npm_lifecycle_event: string;
-		MYVIMRC: string;
 		npm_config_globalconfig: string;
 		npm_config_init_module: string;
 		PWD: string;
