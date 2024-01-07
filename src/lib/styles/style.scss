@@ -16,12 +16,17 @@
   src: url('/fonts/CooperHewitt/CooperHewitt-Light.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/Iosevka/TTF/Iosevka-Regular.ttf') format('truetype');
+}
+
 body {
    margin: auto;
    padding: 0 2%;
    background: #fffff5;
    color: #000;
-   font-family: 'Atkinson Hyperlegible';
+   font-family: 'Iosevka';
    font-size: 1.4rem;
    line-height: 2.1rem;
    max-width: 40rem;

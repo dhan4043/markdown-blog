@@ -1,4 +1,8 @@
 <!-- Header.svelte -->
+<script>
+  import Icon from '$lib/components/atoms/Icon.svelte'; 
+</script>
+
 <header>
   <nav>
     <ul>
@@ -17,6 +21,9 @@
       <li>
         <a href="/contact">contact</a>
       </li>
+      <li>
+        <Icon name='more-horizontal' width='1.4rem' height='2.1rem'/>
+      </li> 
     </ul>
   </nav>
 </header>
@@ -28,7 +35,7 @@
     margin: 0;
     padding-top: 2rem;
     padding-right: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0;
     padding-left: 0;
     background: #fffff5;
     display: flex;
