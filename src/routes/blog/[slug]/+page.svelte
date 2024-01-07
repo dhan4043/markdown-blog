@@ -24,3 +24,11 @@
 	  </aside>
   {/if}
 </article>
+
+<!-- Article Layout -->
+<style>
+  article {
+    padding: auto;
+    overflow-wrap: break-word;
+  }
+</style>

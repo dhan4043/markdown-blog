@@ -3,9 +3,7 @@
   import Header from '$lib/components/organisms/Header.svelte';
   import Footer from '$lib/components/organisms/Footer.svelte';
   import { fade } from 'svelte/transition';
-  import '$lib/styles/style.scss';
-  import '$lib/styles/blog.scss';
-
+  import '$lib/styles/styles.scss';
   export let data;
 </script>
 
