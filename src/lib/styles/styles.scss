@@ -1,6 +1,6 @@
 /* style.css */ 
 /* Set Global Colors and Fonts */
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Source+Serif+4&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Source+Serif+4&family=Source+Sans+3&display=swap';
 
 @font-face {
   font-family: 'Iosevka';
@@ -18,6 +18,28 @@ body {
     line-height: 2.1rem; /* line height 1.5x font size */
     max-width: 40rem;
 }
+
+/* Add Heading Links to Blog Posts */
+:where(h2, h3, h4, h5, h6) {
+	.icon-link {
+		position: relative;
+
+		&::before {
+			content: '#';
+			position: absolute;
+			left: -1.4ch;
+			top: 0;
+			line-height: normal;
+			opacity: 0.5; /* Probably NOT Mobile Friendly If = 0 */
+		}
+	}
+
+	&:hover .icon-link::before {
+		opacity: 1;
+    //text-decoration: underline;
+	}
+}
+
 
 // main {
 //     padding: 1rem;
