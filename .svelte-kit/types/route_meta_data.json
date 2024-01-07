@@ -20,5 +20,11 @@
 	"/blog/[slug]": [
 		"src/routes/blog/[slug]/+page.js",
 		"src/routes/+layout.js"
+	],
+	"/contact": [
+		"src/routes/+layout.js"
+	],
+	"/rss": [
+		"src/routes/rss/+server.js"
 	]
 }
