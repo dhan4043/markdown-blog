@@ -29,15 +29,15 @@
 </header>
 
 <!-- Component Styling -->
-<style>
-
+<style lang="scss">
+  @import "../../styles/themes.scss";
   header {
     margin: 0;
     padding-top: 2rem;
     padding-right: 0;
     padding-bottom: 0;
     padding-left: 0;
-    background: #fffff5;
+    background: $light-theme-bg;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;   
@@ -59,7 +59,7 @@
 
   a {
     text-decoration: none;
-    color: #000; 
+    color: $light-theme-text; 
   }
 
   a:hover {

@@ -1,0 +1,21 @@
+/* themes.css */ 
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Source+Serif+4&display=swap';
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/Iosevka/TTF/Iosevka-Regular.ttf') format('truetype');
+}
+
+/* fonts */ 
+$default-serif: 'Source Serif 4';
+$default-mono: 'Iosevka';
+$default-sans: 'Atkinson Hyperlegible';
+
+/* light palette */ 
+$light-theme-bg: #fffff5;
+$light-theme-text: #282828;
+$light-theme-accent: #6215C6;
+/* dark palette */
+$dark-theme-bg: #282828;
+$dark-theme-text: #fffff5;
+$dark-theme-accent: #1AAD11;

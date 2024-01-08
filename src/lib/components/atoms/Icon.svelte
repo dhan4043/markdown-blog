@@ -1,4 +1,5 @@
 <!-- Icon.svelte -->
+<!-- Credit to ... -->
 <script>
   import feather from "feather-icons";
   export const directions = ["n", "ne", "e", "se", "s", "sw", "w", "nw"];

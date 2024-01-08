@@ -28,11 +28,13 @@
 </footer>
 
 <!-- Component Styling -->
-<style>
+<style lang="scss">
+  @import "../../styles/themes.scss";
+
   footer {
     margin: 0;
     padding-top: 0;
-    background: #fffff5;
+    background: $light-theme-bg;
     display: block;
     /* flex-wrap: wrap; */
     justify-content: space-between;
@@ -55,13 +57,13 @@
 
   a {
     text-decoration: none;
-    color: #000; 
+    color: $light-theme-text; 
   }
 
   p {
     margin: 0;
     padding: 0;
-    color: #000;
+    color: $light-theme-text;
     display: flex;
     flex-wrap: wrap;
   }

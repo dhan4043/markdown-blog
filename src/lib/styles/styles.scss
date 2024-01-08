@@ -1,19 +1,14 @@
-/* style.css */ 
+/* styles.css */ 
 /* Set Global Colors and Fonts */
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Source+Serif+4&family=Source+Sans+3&display=swap';
-
-@font-face {
-  font-family: 'Iosevka';
-  src: url('/fonts/Iosevka/TTF/Iosevka-Regular.ttf') format('truetype');
-}
+@import './themes.scss';
 
 /* Set Global Layout */
 body {
     margin: auto;
     padding: 0 2%;
-    background: #fffff5;
-    color: #282828;
-    font-family: 'Iosevka';
+    background: $light-theme-bg;
+    color: $light-theme-text;
+    font-family: $default-sans;
     font-size: 1.4rem;
     line-height: 2.1rem; /* line height 1.5x font size */
     max-width: 40rem;
@@ -31,13 +26,19 @@ body {
 			top: 0;
 			line-height: normal;
 			opacity: 0.5; /* Probably NOT Mobile Friendly If = 0 */
+      color: $light-theme-accent;
 		}
 	}
 
 	&:hover .icon-link::before {
 		opacity: 1;
+    color: $light-theme-accent;
     //text-decoration: underline;
 	}
+}
+
+a {
+  color: $light-theme-accent;
 }
 
 
