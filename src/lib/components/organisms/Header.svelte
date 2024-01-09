@@ -1,6 +1,7 @@
 <!-- Header.svelte -->
 <script>
   import Icon from '$lib/components/atoms/Icon.svelte'; 
+  import ThemeSwitch from '$lib/components/molecules/ThemeSwitch.svelte';
 </script>
 
 <header>
@@ -22,6 +23,9 @@
         <a href="/contact">contact</a>
       </li>
       <li>
+        <ThemeSwitch width="1.4rem" height="1.4rem"/>
+      </li>
+      <li>
         <Icon name='more-horizontal' width='1.4rem' height='2.1rem'/>
       </li> 
     </ul>
@@ -31,7 +35,7 @@
 <!-- Component Styling -->
 <style lang="scss">
   @import "../../styles/themes.scss";
-  header {
+  :global(body) header {
     margin: 0;
     padding-top: 2rem;
     padding-right: 0;
@@ -44,6 +48,10 @@
     align-content: start;
   }
 
+  :global(body.dark) header {
+    background: $dark-theme-bg;
+  }
+
   ul {
     margin: 0;
     padding: 0;
@@ -54,15 +62,18 @@
 
   ul li:first-child {
     font-weight: bold;
-    color: #ccc;
   }
 
-  a {
+  :global(body) a {
     text-decoration: none;
     color: $light-theme-text; 
   }
 
   a:hover {
     text-decoration: underline;
+  }
+
+  :global(body.dark) a {
+    color: $dark-theme-text;
   }
 </style>

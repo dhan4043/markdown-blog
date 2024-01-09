@@ -31,7 +31,7 @@
 <style lang="scss">
   @import "../../styles/themes.scss";
 
-  footer {
+  :global(body) footer {
     margin: 0;
     padding-top: 0;
     background: $light-theme-bg;
@@ -40,6 +40,10 @@
     justify-content: space-between;
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  :global(body.dark) footer {
+    background: $dark-theme-bg;
   }
 
   hr {
@@ -55,16 +59,24 @@
     gap: 1rem;
   }
 
-  a {
+  :global(body) a {
     text-decoration: none;
     color: $light-theme-text; 
   }
 
-  p {
+  :global(body.dark) a {
+    color: $dark-theme-text;
+  }
+
+  :global(body) p {
     margin: 0;
     padding: 0;
     color: $light-theme-text;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  :global(body.dark) p {
+    color: $dark-theme-text;
   }
 </style>

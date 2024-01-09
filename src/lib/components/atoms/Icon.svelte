@@ -8,8 +8,8 @@
   export let direction = "n";
   export let strokeWidth;
   export let stroke;
-  export let width = "1em";
-  export let height = "1em";
+  export let width = "1rem";
+  export let height = "1rem";
 
   $: icon = feather.icons[name];
   $: rotation = directions.indexOf(direction) * 45;

@@ -8,12 +8,16 @@ body {
     padding: 0 2%;
     background: $light-theme-bg;
     color: $light-theme-text;
-    font-family: $default-sans;
+    font-family: $default-mono;
     font-size: 1.4rem;
     line-height: 2.1rem; /* line height 1.5x font size */
     max-width: 40rem;
 }
 
+body.dark {
+  background: $dark-theme-bg;
+  color: $dark-theme-text;
+}
 /* Add Heading Links to Blog Posts */
 :where(h2, h3, h4, h5, h6) {
 	.icon-link {
@@ -40,7 +44,6 @@ body {
 a {
   color: $light-theme-accent;
 }
-
 
 // main {
 //     padding: 1rem;
