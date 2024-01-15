@@ -78,23 +78,27 @@
     //align-items: center;
   }
 
-  li {
-    //align-items: center;
-    //display: inline;
-  }
-
   :global(body) .header-logo {
     font-weight: bold;
     text-align: center;
-    text-decoration: none;
     padding: 0.1rem;
     background: $dark-theme-accent;
     box-shadow: 0.15rem 0.15rem $dark-theme-bg;
   }
 
+  :global(body) .header-logo:hover {
+    text-decoration: none;
+    filter: brightness(95%);
+  }
+
   :global(body.dark) .header-logo {
     background: $light-theme-accent;
     box-shadow: 0.15rem 0.15rem $light-theme-bg;
+  }
+
+  :global(body.dark) .header-logo:hover {
+    text-decoration: none;
+    filter: brightness(95%);
   }
 
   :global(body) a {

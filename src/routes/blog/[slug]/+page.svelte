@@ -31,5 +31,6 @@
   article {
     padding: auto;
     overflow-wrap: break-word;
+    //font-family: 'Charis SIL';
   }
 </style>
