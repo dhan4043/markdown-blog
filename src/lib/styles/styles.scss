@@ -8,9 +8,10 @@ body {
     padding: 0 2%;
     background: $light-theme-bg;
     color: $light-theme-text;
-    font-family: $default-mono;
-    font-size: 1.4rem;
-    line-height: 2.1rem; /* line height 1.5x font size */
+    font-family: 'Commit Mono'; 
+    //font-size: 1.4rem;
+    //line-height: 2.1rem; /* line height 1.5x font size */
+    line-height: 1.5rem;
     max-width: 40rem;
 }
 
@@ -29,20 +30,29 @@ body.dark {
 			left: -1.4ch;
 			top: 0;
 			line-height: normal;
-			opacity: 0.5; /* Probably NOT Mobile Friendly If = 0 */
-      color: $light-theme-accent;
+			opacity: 0; /* Probably NOT Mobile Friendly If = 0 */
 		}
 	}
 
 	&:hover .icon-link::before {
 		opacity: 1;
-    color: $light-theme-accent;
-    //text-decoration: underline;
 	}
 }
 
-a {
+:where(body) .icon-link {
   color: $light-theme-accent;
+}
+
+:where(body.dark) .icon-link {
+  color: $dark-theme-accent;
+}
+
+:where(body) a {
+  color: $light-theme-accent;
+}
+
+:where(body.dark) a {
+  color: $dark-theme-accent;
 }
 
 // main {

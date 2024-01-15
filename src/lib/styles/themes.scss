@@ -1,21 +1,21 @@
 /* themes.css */ 
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Source+Serif+4&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Source+Serif+4&family=Work+Sans&family=Cousine&family=Inter&display=swap';
 
 @font-face {
-  font-family: 'Iosevka';
-  src: url('/fonts/Iosevka/TTF/Iosevka-Regular.ttf') format('truetype');
+  font-family: 'Commit Mono';
+  src: url('/fonts/CommitMono/CommitMono-Regular.otf') format('opentype');
 }
 
 /* fonts */ 
 $default-serif: 'Source Serif 4';
-$default-mono: 'Iosevka';
+$default-mono: 'Cousine';
 $default-sans: 'Atkinson Hyperlegible';
 
 /* light palette */ 
-$light-theme-bg: #fffff5;
-$light-theme-text: #282828;
-$light-theme-accent: #AA00FF;
+$light-theme-bg: #deded6;
+$light-theme-text: #333;
+$light-theme-accent: #60A917;
 /* dark palette */
-$dark-theme-bg: #282828;
-$dark-theme-text: #fffff5;
-$dark-theme-accent: #008A00;
+$dark-theme-bg: #333;
+$dark-theme-text: #deded6;
+$dark-theme-accent: #efc766;

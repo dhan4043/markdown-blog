@@ -33,6 +33,7 @@
 
   :global(body) footer {
     margin: 0;
+    margin-bottom: 1rem;
     padding-top: 0;
     background: $light-theme-bg;
     display: block;

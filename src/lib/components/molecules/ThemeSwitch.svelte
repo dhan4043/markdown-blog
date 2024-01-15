@@ -26,7 +26,7 @@
 	}
 
 	:global(body.dark) button {
-		background-color: #0050EF;
+		background-color: #008A00;
 		color: #fffff5;
 	}
 </style>

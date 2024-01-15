@@ -16,3 +16,5 @@ export const fetchMarkdownPosts = async () => {
 
 	return allPosts;
 };
+
+export const HttpRegex = /^((http|https):\/\/)/;

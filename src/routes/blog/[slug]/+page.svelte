@@ -1,6 +1,7 @@
 <!-- src/routes/[slug]/+page.svelte -->
 <script>
   import Icon from '$lib/components/atoms/Icon.svelte';
+  import BlogCard from '$lib/components/molecules/BlogCard.svelte';
   export let data;
   const {title, date, tags, Content} = data;
 </script>
@@ -11,7 +12,7 @@
   <Content />
   {#if data.tags.length}
 	  <aside>
-		  <h2>Posted in:</h2>
+      <h2>Posted in:</h2>
 		  <ul>
 			  {#each data.tags as tag}
 				  <li>
