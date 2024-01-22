@@ -6,25 +6,26 @@
   import Button from '$lib/components/atoms/FloatingButton.svelte';
   import Card from '$lib/components/atoms/Card.svelte';
   let showModal = false;
+  let themeIcon = "sun";
+  function toggle() {
+    (themeIcon === "sun") ? (themeIcon = "moon"): (themeIcon = "sun");
+    window.document.body.classList.toggle('dark');
+  }
 </script>
 
 <header>
+  <a class="metro-logo" href="/">DH</a>
+
   <nav>
     <ul>
       <li>
-        <a class="header-logo" href="/">david han</a>
-      </li>
-      <!-- <li> -->
-      <!--   <span>|</span> -->
-      <!-- </li> -->
-      <li>
-        <a href="/blog">blog</a>
+        <a href="/blog">BLOG</a>
       </li>
       <li>
-        <a href="/about">about</a>
+        <a href="/about">ABOUT</a>
       </li>
       <li>
-        <a href="/contact">contact</a>
+        <a href="/contact">CONTACT</a>
       </li>
       <!-- <li> -->
       <!--   <Card /> -->
@@ -33,8 +34,8 @@
       <!--   <ThemeSwitch width='1.4rem' height='2.1rem'/> -->
       <!-- </li> -->
     </ul>
-    <Button on:click={() => (showModal = true)} size="small">
-      <Icon name='settings'/>
+    <Button on:click={toggle} size="small">
+      <Icon name={themeIcon}/>
     </Button>
   </nav>
 </header>
@@ -62,7 +63,9 @@
     flex-wrap: wrap;
     justify-content: space-between;   
     align-content: start;
-    font-size: 1.6rem;
+    line-height: 3.4rem;
+    font-size: 1.7rem;
+    font-family: 'Inter';
   }
 
   :global(body.dark) header {
@@ -75,7 +78,27 @@
     list-style-type: none;
     display: flex;
     gap: 1rem;
-    //align-items: center;
+  }
+
+  :global(body) .metro-logo {
+    font-weight: bold;
+    text-align: center;
+    //padding: 0.2rem;
+    background: #00B140;
+    border-radius: 50%;
+    height: 3.2rem;
+    width: 3.2rem;
+    color: $light-theme-bg;
+  }
+
+  :global(body) .metro-logo:hover {
+    text-decoration: none;
+    filter: brightness(95%);
+  }
+
+  :global(body.dark) .metro-logo {
+    background: $dark-theme-accent;
+    color: $dark-theme-bg;
   }
 
   :global(body) .header-logo {
@@ -84,6 +107,7 @@
     padding: 0.1rem;
     background: $dark-theme-accent;
     box-shadow: 0.15rem 0.15rem $dark-theme-bg;
+    border-radius: 0.2rem;
   }
 
   :global(body) .header-logo:hover {
@@ -113,4 +137,5 @@
   :global(body.dark) a {
     color: $dark-theme-text;
   }
+
 </style>

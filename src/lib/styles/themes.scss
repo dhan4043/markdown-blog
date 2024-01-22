@@ -1,32 +1,32 @@
 /* themes.css */ 
-@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Charis+SIL&family=Major+Mono+Display&family=Cousine&family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif&display=swap';
 
 @font-face {
-  font-family: 'Commit Mono';
-  src: url('/fonts/CommitMono/CommitMono-Regular.otf') format('opentype');
+  font-family: 'Menlo';
+  src: url('/fonts/Menlo/Menlo-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Host Grotesk';
-  src: url('/fonts/HostGrotesk/ttf/HostGrotesk-Regular.ttf') format('truetype');
+  font-family: 'Amiamie';
+  src: url('/fonts/Amiamie/ttf/Amiamie-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Wittgenstein';
-  src: url('/fonts/Wittgenstein/fonts/ttf/Wittgenstein-Regular.ttf') format('truetype');
+  font-family: 'Inter';
+  src: url('/fonts/Inter/InterVariable.ttf') format('truetype');
 }
 
 /* fonts */ 
-$default-serif: 'Source Serif 4';
-$default-mono: 'Cousine';
-$default-sans: 'Atkinson Hyperlegible';
+$default-display: 'Amiamie';
+$default-mono: 'Menlo';
+$default-sans: 'Inter';
 
 /* light palette */ 
 $light-theme-bg: #deded6;
 $light-theme-text: #333;
-$light-theme-accent: #8bc293;
-//#b7cb6d;
+$light-theme-accent: #00B140;
+//#67823a;
 /* dark palette */
 $dark-theme-bg: #333;
 $dark-theme-text: #deded6;
-$dark-theme-accent: #efc766;
+$dark-theme-accent: #FFD100;
+//#efc766;

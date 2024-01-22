@@ -24,7 +24,7 @@
       </li>
     </ul>
   </nav>
-  <p>made with sveltekit</p>
+  <p>MADE WITH SVELTEKIT</p>
 </footer>
 
 <!-- Component Styling -->
@@ -40,6 +40,7 @@
     /* flex-wrap: wrap; */
     justify-content: space-between;
     font-size: 1rem;
+    font-family: 'Inter';
     line-height: 1.5rem;
   }
 

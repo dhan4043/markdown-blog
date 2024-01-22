@@ -44,10 +44,10 @@
 <style lang="scss">
   @import "../../styles/themes.scss";
 	.card {
-		background: $dark-theme-bg;
+		background: #919D9D;
 		box-shadow: var(--card-shadow);
 		color: $dark-theme-text;
-		border-radius: 10px;
+		border-radius: 0.5rem;
 		transition: all 0.4s ease;
 		position: relative;
 		overflow: hidden;
