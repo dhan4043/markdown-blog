@@ -9,10 +9,10 @@ body {
     background: $light-theme-bg;
     color: $light-theme-text;
     font-family: 'Inter'; 
-    //font-size: 1.4rem;
+    font-size: 1.45rem;
     //line-height: 2.1rem; /* line height 1.5x font size */
-    line-height: 1.5rem;
-    max-width: 48rem;
+    line-height: 1.618;
+    max-width: 60rem;
 }
 
 body.dark {

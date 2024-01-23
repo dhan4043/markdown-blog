@@ -12,8 +12,8 @@
   $: tag = href ? "a" : "article";
   $: linkProps = {
     href,
-    target,
-    rel
+    //target,
+    //rel
   };
 </script>
 
@@ -76,7 +76,6 @@
 		gap: 10px;
 		padding: 20px 20px;
 		flex: 1 0 50%;
-
 		.content {
 			display: flex;
 			flex-direction: column;

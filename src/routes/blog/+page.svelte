@@ -9,7 +9,7 @@
 <ul>
   {#each data.posts as post}
     <li>
-      <BlogCard title={post.meta.title} slug={post.path}/>
+      <BlogCard title={post.meta.title} slug={post.path} excerpt={post.meta.date} tags={post.meta.tags}/>
     </li>
     <!-- <li> -->
     <!--   <h2> -->
@@ -24,7 +24,9 @@
 
 <style>
   ul {
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
     padding: 0;
     list-style-type: none;
     gap: 1rem;

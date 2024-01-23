@@ -24,7 +24,7 @@
       </li>
     </ul>
   </nav>
-  <p>MADE WITH SVELTEKIT</p>
+  <p>Made with SvelteKit</p>
 </footer>
 
 <!-- Component Styling -->
@@ -32,8 +32,8 @@
   @import "../../styles/themes.scss";
 
   :global(body) footer {
-    margin: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     padding-top: 0;
     background: $light-theme-bg;
     display: block;
@@ -41,7 +41,7 @@
     justify-content: space-between;
     font-size: 1rem;
     font-family: 'Inter';
-    line-height: 1.5rem;
+    line-height: 1.618;
   }
 
   :global(body.dark) footer {

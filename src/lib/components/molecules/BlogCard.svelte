@@ -62,9 +62,9 @@
 		align-items: center;
 		justify-content: space-between;
 		width: 100%;
-		font-size: 1.2rem;
+		font-size: 1.25rem;
 		font-family: var(--font--title);
-		font-weight: 700;
+		font-weight: bold;
 	}
 
 	.tags {

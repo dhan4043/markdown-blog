@@ -14,25 +14,19 @@
 </script>
 
 <header>
-  <a class="metro-logo" href="/">DH</a>
-
+  <!-- <a class="metro-logo" href="/">DH</a> -->
+  <a href="/">David Han</a>
   <nav>
     <ul>
       <li>
-        <a href="/blog">BLOG</a>
+        <a href="/blog">Blog</a>
       </li>
       <li>
-        <a href="/about">ABOUT</a>
+        <a href="/about">About</a>
       </li>
       <li>
-        <a href="/contact">CONTACT</a>
+        <a href="/contact">Contact</a>
       </li>
-      <!-- <li> -->
-      <!--   <Card /> -->
-      <!--         </li>  -->
-      <!-- <li> -->
-      <!--   <ThemeSwitch width='1.4rem' height='2.1rem'/> -->
-      <!-- </li> -->
     </ul>
     <Button on:click={toggle} size="small">
       <Icon name={themeIcon}/>
@@ -63,9 +57,10 @@
     flex-wrap: wrap;
     justify-content: space-between;   
     align-content: start;
-    line-height: 3.4rem;
-    font-size: 1.7rem;
+    line-height: 1.618;
+    font-size: 1.75rem;
     font-family: 'Inter';
+    //font-weight: bold;
   }
 
   :global(body.dark) header {
