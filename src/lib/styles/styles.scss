@@ -2,6 +2,12 @@
 /* Set Global Colors and Fonts */
 @import './themes.scss';
 
+/* Set root font size and line height */
+:root {
+  font-size: 16px;
+  line-height: 26px;
+}
+
 /* Set Global Layout */
 body {
     margin: auto;

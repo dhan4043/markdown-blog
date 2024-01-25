@@ -9,6 +9,7 @@
 </div>
 
 <style lang="scss">
+	@import "../../styles/themes.scss";
 	.tag {
 		display: flex;
 		align-items: center;
@@ -22,8 +23,10 @@
 		white-space: nowrap;
 
 		&.primary {
-			background-color: var(--color--primary-tint);
-			color: var(--color--primary);
+			//background-color: var(--color--primary-tint);
+			//color: var(--color--primary);
+			background-color: $light-theme-accent;
+			color: $dark-theme-text;
 		}
 		&.secondary {
 			background-color: var(--color--secondary-tint);
