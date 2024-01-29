@@ -1,0 +1,124 @@
+/**
+ * atom-dark theme for `prism.js`
+ * Based on Atom's `atom-dark` theme: https://github.com/atom/atom-dark-syntax
+ * @author Joe Gibson (@gibsjose)
+ */
+@import './themes.scss';
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #c5c8c6;
+	font-family: $default-mono;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border-radius: 0.5rem;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #1c1e26;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: 0.5em;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+	color: #919D9D; /* fg4 / gray1 */
+}
+
+.token.delimiter,
+.token.boolean,
+.token.keyword,
+.token.selector,
+.token.important,
+.token.atrule {
+	color: #DA291C; /* red2 */
+}
+
+.token.operator,
+.token.punctuation,
+.token.attr-name {
+	color: #a89984; /* fg4 / gray1 */
+}
+
+.token.tag,
+.token.tag .punctuation,
+.token.doctype,
+.token.builtin {
+	color: #ED8B00; /* yellow2 */
+}
+
+.token.entity,
+.token.number,
+.token.symbol {
+	color: #5C068C; /* purple2 */
+}
+
+.token.property,
+.token.constant,
+.token.variable {
+	color: #BF0D3E; /* red2 */
+}
+
+.token.string,
+.token.char {
+	color: #00B140; /* green2 */
+}
+
+.token.attr-value,
+.token.attr-value .punctuation {
+	color: #a89984; /* fg4 / gray1 */
+}
+
+.token.url {
+	color: #00B140; /* green2 */
+	text-decoration: underline;
+}
+
+.token.function {
+	color: #FFD100; /* yellow2 */
+}
+
+.token.regex {
+	background: #00B140; /* green2 */
+}
+
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.inserted {
+	background: #a89984; /* fg4 / gray1 */
+}
+
+.token.deleted {
+	background: #fb4934; /* red2 */
+}

@@ -1,7 +1,6 @@
 <!-- Pagination.svelte -->
 <script>
 	import Icon from './Icon.svelte';
-  import Button from './Button.svelte';
 	
   export let rows;
   export let perPage;
@@ -40,7 +39,9 @@
 {/if}
 
 
-<style>
+<style lang="scss">
+  @import "../../styles/themes.scss";
+
   .sr-only {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
@@ -66,10 +67,14 @@
     background-color: var(--accent-color)
   }
 	
-	button {
+  button {
 		display: flex;
     border: transparent;
     background-color: transparent;
 	}
+
+  :global(body.dark) button {
+    color: $dark-theme-text;
+  }
 	
 </style>

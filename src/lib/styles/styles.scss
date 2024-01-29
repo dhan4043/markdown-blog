@@ -1,10 +1,11 @@
 /* styles.css */ 
 /* Set Global Colors and Fonts */
 @import './themes.scss';
+@import './prism.scss';
 
 /* Set root font size and line height */
 :root {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 26px;
 }
 
@@ -18,7 +19,7 @@ body {
     font-size: 1.45rem;
     //line-height: 2.1rem; /* line height 1.5x font size */
     line-height: 1.618;
-    max-width: 60rem;
+    max-width: 48rem;
 }
 
 body.dark {

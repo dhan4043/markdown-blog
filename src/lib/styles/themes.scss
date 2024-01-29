@@ -1,13 +1,9 @@
 /* themes.css */ 
+@import 'https://use.typekit.net/ake2zjm.css';
 
 @font-face {
   font-family: 'Menlo';
   src: url('/fonts/Menlo/Menlo-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Aileron';
-  src: url('/fonts/Aileron/Aileron/Aileron-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -16,12 +12,13 @@
 }
 
 /* fonts */ 
-$default-display: 'Amiamie';
+$default-display: 'Inter';
 $default-mono: 'Menlo';
 $default-sans: 'Inter';
 
 /* light palette */ 
-$light-theme-bg: #deded6;
+$light-theme-bg: #fdfdfd;
+//#deded6;
 $light-theme-text: #333;
 $light-theme-accent: #00B140;
 //#67823a;
